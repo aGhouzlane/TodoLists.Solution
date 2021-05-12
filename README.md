@@ -2,7 +2,7 @@
 
 #### _{Brief description of application}_
 
-#### By _Thomas Russell_
+#### By _Ahmed Ghouzlane_
 
 ## Technologies Used
 
@@ -42,8 +42,8 @@
 
 ## License ⚖
 
-_MIT © Thomas Russell 2021_
+_MIT © Ahmed Ghouzlane 2021_
 
 ## Contact Information 🤳
 
-Thomas Russell _t.p.russell19@gmail.com_
+_Ahmed ahmedghouzlane@gmail.com_
