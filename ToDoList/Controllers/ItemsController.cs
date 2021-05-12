@@ -22,15 +22,14 @@ namespace ToDoList.Controllers
     }
 
     [HttpGet("/categories/{categoryId}/items/{itemId}")]
-    public ActionResult Show(int id)
+    public ActionResult Show(int categoryId, int itemId)
     {
+      Item item = Item.Find(itemId);
+      Category category = Category.Find(categoryId);
       Dictionary<string, object> model = new Dictionary<string, object>();
-      Category selectedCategory = Category.Find(id);
-      List<Item> categoryItems = selectedCategory.Items;
-      model.Add("category", selectedCategory);
-      model.Add("items", categoryItems);
+      model.Add("item", item);
+      model.Add("category", category);
       return View(model);
     }
-
   }
 }

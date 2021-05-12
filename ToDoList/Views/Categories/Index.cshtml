@@ -7,9 +7,9 @@
   <h3>No categories have been added yet!</h3>
 }
 
-@foreach (Item item in Model)
+@foreach (Category category in Model)
 {
-  <li><a href='/categories/@Model["category"].Id/items/@item.Id'>@item.Description</a></li>
+  <h3><a href='/categories/@category.Id'>@category.Name</a></h3>
 }
 
 <p><a href='/'>Back home</a></p>
